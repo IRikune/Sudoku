@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid blue;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border: #6d6dff;
+    transition: .2s;
+}
+
+.cell:hover {
+    background-color: #6d6dff;
+}
+
+.cell:nth-child(1) {
+    border-right: 1px solid #6d6dff;
+    border-bottom: 1px solid #6d6dff;
+}
+
+.cell:nth-child(2) {
+    border-bottom: 1px solid #6d6dff;
+}
+
+.cell:nth-child(3) {
+    border-left: 1px solid #6d6dff;
+    border-bottom: 1px solid #6d6dff;
+}
+
+.cell:nth-child(4) {
+    border-right: 1px solid #6d6dff;
+    border-bottom: 1px solid #6d6dff;
+}
+
+.cell:nth-child(5) {
+    border-bottom: 1px solid #6d6dff;
+}
+
+.cell:nth-child(6) {
+    border-left: 1px solid #6d6dff;
+    border-bottom: 1px solid #6d6dff;
+
+}
+
+.cell:nth-child(7) {
+    border-right: 1px solid #6d6dff;
+}
+
+.cell:nth-child(9) {
+    border-left: 1px solid #6d6dff;
+}
+
+
+#board {
+    display: grid;
+    aspect-ratio: 1;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border: 1px solid blue;
+}
